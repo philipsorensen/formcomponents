@@ -1,0 +1,17 @@
+{
+    "name": "philipsorensen/form-components",
+    "description": "View components for forms in Laravel",
+    "autoload": {
+        "psr-4": {
+            "Philipsorensen\\FormComponents\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Philip Sørensen",
+            "email": "git@philipsoerensen.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
