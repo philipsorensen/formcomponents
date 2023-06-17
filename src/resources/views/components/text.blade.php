@@ -6,8 +6,8 @@
 ])
 
 <div class="{{ $col }} mb-3">
-	<x-form.label :id="$id" :name="$name" />
+	<x-formcomponents::label :id="$id" :name="$name" />
 	<textarea class="form-control @error($id) is-invalid @enderror" id="{{ $id }}" name="{{ $id }}" rows="12">{{ $value }}</textarea>
 	
-	<x-form.error :name="$id" />
+	<x-formcomponents::error :name="$id" />
 </div>

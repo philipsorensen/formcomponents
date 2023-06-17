@@ -14,6 +14,7 @@ class FormComponentsProvider extends ServiceProvider
 	 */
 	public function boot()
 	{
+		$this->loadViewsFrom(__DIR__.'/../resources/views', 'formcomponents');
 		Blade::componentNamespace('FormComponents\\Views\\Components', 'formcomponents');
 	}
 }
