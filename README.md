@@ -1,8 +1,17 @@
 View components for forms in Laravel.
 
-Usage: 
+This is based on Bootstrap 5. 
 
-<x-formcomponents::input />
+## Installation
 
+> composer require philipsorensen/formcomponents
 
-Requires Bootstrap 5. 
+Add the following in your `config/app.php` under providers. 
+
+```
+PhilipSorensen\FormComponents\Providers\FormComponentsProvider::class
+```
+
+## Usage
+
+> <x-formcomponents::input />

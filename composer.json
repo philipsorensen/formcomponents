@@ -9,9 +9,11 @@
     "authors": [
         {
             "name": "Philip Sørensen",
-            "email": "git@philipsoerensen.com"
+            "email": "git@philipsoerensen.com",
+			"homepage": "https://philipsoerensen.com"
         }
     ],
+	"license": "MIT",
     "minimum-stability": "stable",
     "require": {}
 }
