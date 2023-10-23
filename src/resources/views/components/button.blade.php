@@ -4,5 +4,5 @@
 ])
 
 <div class="{{ $col }} mb-3">
-	<button class="btn {{ $class }} form-control">{{ $slot }}</button>
+	<button class="btn {{ $class }} form-control" {{ $attributes }}>{{ $slot }}</button>
 </div>
