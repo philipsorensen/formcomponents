@@ -2,11 +2,11 @@
 	'col' => 'col-12',
 	'default' => 'Select',
 	'id',
-	'name',
+	'name' => null,
 ])
 
 <div class="{{ $col }} mb-3">
-	<x-formcomponents::label :id="$id" :name="$name" />
+	@if ($name) <x-formcomponents::label :id="$id" :name="$name" /> @endif
 	<select class="form-select @error($id) is-invalid @enderror" id="{{ $id }}" name="{{ $id }}">
 		<option disabled>{{ $default }}</option>
 		{{ $slot }}

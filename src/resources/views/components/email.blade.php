@@ -1,11 +1,11 @@
 @props([
-	'name',
+	'col' => 'col-12',
 	'id',
-	'col' => 'col-12'
+	'name' => null,
 ])
 
 <div class="{{ $col }} mb-3">
-	<x-formcomponents::label :id="$id" :name="$name" />
+	@if ($name) <x-formcomponents::label :id="$id" :name="$name" /> @endif
 	<input class="form-control @error($id) is-invalid @enderror" id="{{ $id }}" inputmode="email" name="{{ $id }}" type="email" {{ $attributes(['placeholder' => $name, 'value' => old($id)]) }} >
 
 	<x-formcomponents::error :name="$id" />
