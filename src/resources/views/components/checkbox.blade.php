@@ -1,6 +1,6 @@
 @props([
 	'checked' => 0,
-	'col' => 'col-12'
+	'col' => 'col-12',
 	'id',
 	'name',
 ])
