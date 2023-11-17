@@ -1,6 +1,6 @@
 @props([
 	'col' => 'col-12',
-	'default' => 'Select',
+	'default' => null,
 	'id',
 	'name' => null,
 	'tooltip' => null,
