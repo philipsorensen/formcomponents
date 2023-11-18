@@ -9,7 +9,7 @@
 <div class="{{ $col }} mb-3">
 	@if ($name) <x-formcomponents::label :id="$id" :name="$name" /> @endif
 	@if ($tooltip) <x-formcomponents::tooltip :url="$tooltip" /> @endif
-	<select class="form-select @error($id) is-invalid @enderror" id="{{ $id }}" name="{{ $id }}">
+	<select class="form-select @error($id) is-invalid @enderror" id="{{ $id }}" name="{{ $id }}" {{ $attributes }}>
 		@if ($default) <option disabled>{{ $default }}</option> @endif
 		{{ $slot }}
 	</select>
