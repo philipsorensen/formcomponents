@@ -16,6 +16,6 @@
 	"license": "MIT",
     "minimum-stability": "stable",
     "require": {
-		"philipsorensen/iconcomponents": "^1.0.17"
+		"philipsorensen/bootstrapicons": "^1.1.0"
 	}
 }
