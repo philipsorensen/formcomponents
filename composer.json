@@ -17,5 +17,12 @@
     "minimum-stability": "stable",
     "require": {
 		"philipsorensen/bootstrapicons": "^1.1.0"
+	},
+	"extra": {
+		"laravel": {
+			"providers": [
+				"PhilipSorensen\\FormComponents\\Providers\\FormComponentsProvider"
+			]
+		}
 	}
 }
