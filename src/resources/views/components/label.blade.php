@@ -4,4 +4,4 @@
 	'name',
 ])
 
-<label class="{{ $class }}" for="{{ $id }}">{{ $name }}</label>
+<label class="{{ $class }}" for="{{ $id }}">{!! $name !!}</label>
