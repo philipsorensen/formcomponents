@@ -2,6 +2,6 @@
 	'url'
 ])
 
-<a class="ms-1" href="{{ $url }}" target="_blank">
+<a class="{{ config('formcomponents.tooltip.class') }}" href="{{ $url }}" target="_blank">
 	<x-bootstrapicons::info-circle />
 </a>

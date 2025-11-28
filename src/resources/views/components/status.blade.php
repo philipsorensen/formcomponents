@@ -1,10 +1,10 @@
 @if (session('error'))
-	<div class="alert alert-danger" role="alert">
+	<div class="{{ config('formcomponents.alert.danger.class') }}" role="alert">
 		{{ session('error') }}
 	</div>
 @endif
 @if (session('success'))
-	<div class="alert alert-success" role="alert">
+	<div class="{{ config('formcomponents.alert.success.class') }}" role="alert">
 		{{ session('success') }}
 	</div>
 @endif

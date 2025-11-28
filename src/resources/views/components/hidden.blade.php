@@ -1,5 +1,5 @@
 @props([
-	'col' => 'col-12',
+	'col' => config('formcomponents.div.class'),
 	'id',
 	'name',
 ])

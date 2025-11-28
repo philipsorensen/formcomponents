@@ -1,15 +1,15 @@
 @props([
-	'col' => 'col-12',
+	'col' => config('formcomponents.div.class'),
 	'default' => null,
 	'id',
 	'name' => null,
 	'tooltip' => null,
 ])
 
-<div class="{{ $col }} mb-3">
+<div class="{{ $col }} {{ config('formcomponents.div.padding') }}">
 	@if ($name) <x-formcomponents::label :id="$id" :name="$name" /> @endif
 	@if ($tooltip) <x-formcomponents::tooltip :url="$tooltip" /> @endif
-	<select class="form-select @error($id) is-invalid @enderror" id="{{ $id }}" name="{{ $id }}" {{ $attributes }}>
+	<select class="form-select @error($id) {{ config('formcomponents.is-invalid-class') }} @enderror" id="{{ $id }}" name="{{ $id }}" {{ $attributes }}>
 		@if ($default) <option disabled>{{ $default }}</option> @endif
 		{{ $slot }}
 	</select>

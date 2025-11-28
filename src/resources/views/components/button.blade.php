@@ -1,8 +1,8 @@
 @props([
-	'class' => 'btn-primary',
-	'col' => 'col-12'
+	'class' => config('formcomponents.button.class'),
+	'col' => config('formcomponents.div.class'),
 ])
 
-<div class="{{ $col }} mb-3">
-	<button class="btn {{ $class }} form-control" {{ $attributes }}>{{ $slot }}</button>
+<div class="{{ $col }} {{ config('formcomponents.div.padding') }}">
+	<button class="{{ $class }}" {{ $attributes }}>{{ $slot }}</button>
 </div>
