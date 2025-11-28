@@ -1,7 +1,7 @@
 @props(['name'])
 
 @error($name)
-	<span class="invalid-feedback" role="alert">
+	<span class="{{ config('formcomponents.error.class') }}" role="alert">
 		<strong>{{ $message }}</strong>
 	</span>
 @enderror

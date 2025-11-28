@@ -1,5 +1,5 @@
 @props([
-	'class' => 'mb-1',
+	'class' => config('formcomponents.label.class'),
 	'id',
 	'name',
 ])

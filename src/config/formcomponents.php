@@ -16,9 +16,18 @@ return [
         'class' => 'col-12',
         'padding' => 'mb-3',
     ],
+    'error' => [
+        'class' => 'invalid-feedback',
+    ],
+    'input' => [
+        'class' => 'form-control',
+    ],
     'is-invalid-class' => 'is-invalid',
     'label' => [
         'class' => 'form-check-label',
+    ],
+    'textarea' => [
+        'class' => 'form-control',
     ],
     'tooltip' => [
         'class' => 'ms-1',
