@@ -6,23 +6,35 @@
             "PhilipSorensen\\FormComponents\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "PhilipSorensen\\FormComponents\\Tests\\": "tests/"
+        }
+    },
     "authors": [
         {
             "name": "Philip Sørensen",
             "email": "git@philipsoerensen.com",
-			"homepage": "https://philipsoerensen.com"
+            "homepage": "https://philipsoerensen.com"
         }
     ],
-	"license": "MIT",
+    "license": "MIT",
     "minimum-stability": "stable",
     "require": {
-		"philipsorensen/bootstrapicons": "^1.1.0"
-	},
-	"extra": {
-		"laravel": {
-			"providers": [
-				"PhilipSorensen\\FormComponents\\Providers\\FormComponentsProvider"
-			]
-		}
-	}
+        "philipsorensen/bootstrapicons": "^1.1.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0",
+        "phpunit/phpunit": "^11.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "PhilipSorensen\\FormComponents\\Providers\\FormComponentsProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    }
 }
