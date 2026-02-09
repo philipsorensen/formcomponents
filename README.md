@@ -10,6 +10,16 @@ Add the following in your `config/app.php` under providers.
 PhilipSorensen\FormComponents\Providers\FormComponentsProvider::class
 ```
 
+## Configuration
+
+Publish the config file with:
+
+```
+php artisan vendor:publish --provider="PhilipSorensen\FormComponents\Providers\FormComponentsProvider" --tag="config"
+```
+
+This will publish `formcomponents.php` to your `config` directory.
+
 ## Usage
 
 > <x-formcomponents::input />
