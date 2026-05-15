@@ -3,9 +3,10 @@
 	'col' => config('formcomponents.div.class'),
 	'id',
 	'name',
+	'padding' => config('formcomponents.div.padding'),
 ])
 
-<div class="{{ $col }} {{ config('formcomponents.div.padding') }}">
+<div class="{{ $col }} {{ $padding }}">
 	<div class="form-check mt-sm-2 pt-sm-2">
 		<input type="hidden" name="{{ $id }}" value="0" />
 		<input class="form-check-input @error($id) {{ config('formcomponents.is-invalid-class') }} @enderror" id="{{ $id }}" name="{{ $id }}" type="checkbox" value="1" @if ($checked == 1) checked @endif />

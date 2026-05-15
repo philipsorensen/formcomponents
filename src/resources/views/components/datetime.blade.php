@@ -4,11 +4,12 @@
 	'max' => '2028-06-30T16:30',
 	'min' => '2018-06-30T16:30',
 	'name' => null,
+	'padding' => config('formcomponents.div.padding'),
 	'pattern' => '[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}',
 	'tooltip' => null,
 ])
 
-<div class="{{ $col }} {{ config('formcomponents.div.padding') }}">
+<div class="{{ $col }} {{ $padding }}">
 	@if ($name) <x-formcomponents::label :id="$id" :name="$name" /> @endif
 	@if ($tooltip) <x-formcomponents::tooltip :url="$tooltip" /> @endif
 	<input class="form-control @error($id) {{ config('formcomponents.is-invalid-class') }} @enderror" id="{{ $id }}" max="{{ $max }}" min="{{ $min }}" name="{{ $id }}" pattern="{{ $pattern }}" type="datetime-local" {{ $attributes(['placeholder' => $name, 'value' => old($id)]) }} >
